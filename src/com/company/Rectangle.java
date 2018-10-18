@@ -1,23 +1,23 @@
 package com.company;
 
 public class Rectangle extends Shape {
-    private int length;
+    private int height;
     private int width;
-    public Rectangle( int length, int width)
+    public Rectangle( int height, int width)
     {
         super("Rectangle");
-        this.length = length;
+        this.height = height;
         this.width = width;
     }
     @Override
     public double getArea()
     {
-        return (length*width);
+        return (height*width);
     }
 
     @Override
     public double getPerimeter()
     {
-        return (length*2) + (width*2);
+        return (height*2) + (width*2);
     }
 }

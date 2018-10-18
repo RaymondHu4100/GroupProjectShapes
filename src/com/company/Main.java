@@ -6,8 +6,11 @@ public class Main {
 	// write your code here
         Shape shape1 = new Rectangle( 10, 5);
         Shape shape2 = new RPentagon (5);
+        Shape shape3 = new ETriangle (5);
+        Shape shape4 = new Circle(10);
 
-        Shape[] shapes = {shape1, shape2};
+
+        Shape[] shapes = {shape1, shape2, shape3, shape4};
         for (Shape cur : shapes)
         {
             System.out.println(cur);

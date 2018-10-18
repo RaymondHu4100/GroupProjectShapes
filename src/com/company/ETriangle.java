@@ -2,19 +2,19 @@ package com.company;
 
 public class ETriangle extends Shape {
     private int side;
-    public RPentagon( int side)
+    public ETriangle ( int side)
     {
-        super("RPentagon");
+        super("ETriangle");
         this.side = side;
     }
     @Override
     public double getArea()
     {
-        return 0.25*Math.sqrt(5*(5+2*Math.sqrt(5)))*(side*side);
+        return (Math.sqrt(3)/4)*(side*side);
     }
     @Override
     public double getPerimeter()
     {
-        return side*5;
+        return side*3;
     }
 }
